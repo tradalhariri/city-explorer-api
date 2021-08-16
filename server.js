@@ -18,7 +18,8 @@ server.get('/weather', (req, res) => {
 try{
     let cityWeatherData = weatherData.find(city => city.city_name.toLowerCase() === req.query.searchQuery.toLowerCase())
     let cityWeatherDataDays = cityWeatherData.data.map(day => {
-        let forecastDay = new Forecast(day, day.weather.description)
+        let forecastDay = new Forecast(day.datetime, `Low of ${day.low_temp} , High of ${day.max_temp} with  ${day.weather.description}`)
+        
         return forecastDay;
     });
     res.send(cityWeatherDataDays);
@@ -42,8 +43,8 @@ server.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
 
 
 class Forecast {
-    constructor(data, description) {
-        this.data = data;
+    constructor(date, description) {
+        this.date = date;
         this.description = description;
     }
 }
