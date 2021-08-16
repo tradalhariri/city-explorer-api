@@ -10,6 +10,10 @@ server.use(cors());
 
 const PORT = process.env.PORT;
 
+server.get('/',(req,res)=>{
+    res.send('<h1>Welcome to the City Explorer Api</h1>');
+})
+
 server.get('/weather', (req, res) => {
 try{
     let cityWeatherData = weatherData.find(city => city.city_name.toLowerCase() === req.query.searchQuery.toLowerCase())
