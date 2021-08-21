@@ -163,3 +163,41 @@ Actual time needed to complete:
 20 minutes
 
 -----------
+
+### lab 10
+
+Name of feature:
+1: Performance: As a user, I want the application to work with recent results, so that I can see info without the app doing unnecessary API calls.
+
+Estimate of time needed to complete:
+
+15 minutes
+
+Start time: 1:00 pm
+
+Finish time: 1:15 pm
+
+Actual time needed to complete:
+
+15 minutes
+
+-----------
+
+
+Name of feature:
+2. STRETCH: As a user of City Explorer, I want to see info about restaurants in the city I searched, so that I find the best places to eat.
+
+Estimate of time needed to complete:
+
+2 hours
+
+Start time: 2:00 pm
+
+Finish time: 5:00 pm
+
+Actual time needed to complete:
+
+3 hours
+
+-----------
+
